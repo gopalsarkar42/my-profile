@@ -44,3 +44,26 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(35,107,111,.15),transpare
 @keyframes substation-draw{to{stroke-dashoffset:0}}
 @keyframes labels-appear{to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.substation-blueprint .build-stage{stroke-dashoffset:0;animation:none}.substation-blueprint .build-labels,.substation-blueprint .current-flow{opacity:1;animation:none}.substation-blueprint .scan-beam{display:none}}
+
+
+/* Masterpiece-style animated high-voltage grid substation single-line drawing */
+.hero-grid{grid-template-columns:1fr;gap:32px}
+.hero-copy{max-width:900px}
+.draft-card{width:100%;min-height:680px;padding:20px}
+.blueprint.masterpiece-sld{position:absolute;inset:70px 18px 18px;width:calc(100% - 36px);height:calc(100% - 88px);overflow:visible}
+.masterpiece-sld .sld-stage{opacity:0;animation:sld-reveal .8s ease-out forwards}
+.masterpiece-sld .sld-header{animation-delay:.1s}
+.masterpiece-sld .sld-busbars{stroke-dasharray:1200;stroke-dashoffset:1200;animation:sld-draw 1.4s ease-out .6s forwards}
+.masterpiece-sld .sld-bay-lines{stroke-dasharray:500;stroke-dashoffset:500;animation:sld-draw 2.4s ease-out 1.7s forwards}
+.masterpiece-sld .sld-transformers{stroke-dasharray:260;stroke-dashoffset:260;animation:sld-draw 1.5s ease-out 3.6s forwards}
+.masterpiece-sld .sld-mv{stroke-dasharray:1600;stroke-dashoffset:1600;animation:sld-draw 2.2s ease-out 4.7s forwards}
+.masterpiece-sld .sld-bottom{stroke-dasharray:800;stroke-dashoffset:800;animation:sld-draw 1.7s ease-out 5.8s forwards}
+.masterpiece-sld .sld-labels{animation-delay:6.7s}
+.masterpiece-sld .scan-beam{transform:translateY(-30px);animation:sld-scan 6s ease-in-out 1s infinite;pointer-events:none}
+.masterpiece-sld .sld-energize{opacity:0;animation:sld-reveal .6s ease-out 7.3s forwards}
+@keyframes sld-draw{to{stroke-dashoffset:0;opacity:1}}
+@keyframes sld-reveal{to{opacity:1}}
+@keyframes sld-scan{0%{transform:translateY(0);opacity:0}15%{opacity:.5}80%{opacity:.3}100%{transform:translateY(550px);opacity:0}}
+@media(max-width:900px){.draft-card{min-height:560px}.blueprint.masterpiece-sld{inset:66px 10px 10px;width:calc(100% - 20px);height:calc(100% - 76px)}}
+@media(max-width:650px){.draft-card{min-height:390px;padding:12px}.draft-top{font-size:.58rem}.blueprint.masterpiece-sld{inset:55px 5px 5px;width:calc(100% - 10px);height:calc(100% - 60px)}}
+@media(prefers-reduced-motion:reduce){.masterpiece-sld .sld-stage,.masterpiece-sld .sld-busbars,.masterpiece-sld .sld-bay-lines,.masterpiece-sld .sld-transformers,.masterpiece-sld .sld-mv,.masterpiece-sld .sld-bottom,.masterpiece-sld .sld-energize{opacity:1;stroke-dashoffset:0;animation:none}.masterpiece-sld .scan-beam{display:none}}
