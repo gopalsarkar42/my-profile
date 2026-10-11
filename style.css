@@ -106,3 +106,6 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(35,107,111,.15),transpare
 .individual-drawings-grid .work-body{flex:1}
 @media(max-width:1000px){.individual-drawings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.individual-drawings-grid{grid-template-columns:1fr}.individual-drawings-grid .work-visual,.individual-drawings-grid .work-visual svg{height:230px;min-height:230px}}
+
+/* UG underground electrical cable route drawing */
+.individual-drawings-grid .work-card:hover .work-visual svg{transition:filter .25s ease}
