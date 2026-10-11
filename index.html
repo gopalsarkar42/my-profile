@@ -31,29 +31,63 @@
     </div>
     <div class="draft-card" aria-label="Decorative technical drawing illustration">
       <div class="draft-top"><span>Drawing sheet / GS-017</span><span class="draft-live">● Design thinking</span></div>
-      <svg class="blueprint" viewBox="0 0 520 390" role="img" aria-label="Abstract architectural plan and drafting geometry">
-        <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#63d6d1" stroke-opacity=".16" stroke-width=".6"/></pattern></defs>
+      <svg class="blueprint substation-blueprint" viewBox="0 0 520 390" role="img" aria-label="Animated conceptual 33 kilovolt to 11 kilovolt electrical substation single-line layout, showing incoming 33 kV line, isolator, circuit breaker, instrument transformers, 33/11 kV power transformer, 11 kV busbar and outgoing feeders">
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#63d6d1" stroke-opacity=".16" stroke-width=".6"/></pattern>
+          <linearGradient id="scanGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#67f0dc" stop-opacity="0"/><stop offset=".5" stop-color="#67f0dc" stop-opacity=".65"/><stop offset="1" stop-color="#67f0dc" stop-opacity="0"/></linearGradient>
+        </defs>
         <rect width="520" height="390" fill="url(#grid)"/>
-        <g fill="none" stroke="#63d6d1" stroke-width="1.4" opacity=".9">
-          <path d="M72 72H260V120H325V72H445V300H335V340H72Z"/>
-          <path d="M92 92H240V140H305V92H425V280H315V320H92Z" stroke-dasharray="4 4" opacity=".6"/>
-          <path d="M72 178H260M260 120V300M335 72V300M72 245H260M140 72V178M390 72V180M335 220H445"/>
-          <path d="M92 92L240 280M240 92L92 280" stroke-opacity=".25"/>
-          <circle cx="260" cy="220" r="39"/><circle cx="260" cy="220" r="6"/>
-          <path d="M248 220H272M260 208V232M46 72H64M55 63V81M445 320H470M457 311V329" stroke="#f3a64a"/>
+        <g class="build-stage stage-1" fill="none" stroke="#63d6d1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M42 48H480M70 48V92M110 48V92M150 48V92M70 92H150" />
+          <path d="M70 92L58 110M70 92L82 110M110 92L98 110M110 92L122 110M150 92L138 110M150 92L162 110"/>
+          <path d="M50 110H170M60 120H160"/>
+          <path d="M72 48V28M110 48V28M150 48V28"/>
         </g>
-        <g fill="#f3a64a" font-family="monospace" font-size="10">
-          <text x="145" y="60">PLAN / A-01</text><text x="355" y="57">N ↑</text><text x="355" y="315">SCALE 1:100*</text><text x="82" y="357">CONCEPTUAL DRAFTING GRAPHIC</text>
+        <g class="build-stage stage-2" fill="none" stroke="#63d6d1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M110 120V148M98 148H122M101 154L119 166M119 154L101 166M110 166V183"/>
+          <path d="M110 183H174M174 183V165M164 165H184M164 165L174 151L184 165"/>
+          <path d="M174 183V203M162 203H186M162 203L174 218L186 203"/>
+          <path d="M174 218V246"/>
+          <rect x="157" y="246" width="34" height="24" rx="2"/>
+          <path d="M164 252L184 264M184 252L164 264"/>
         </g>
-        <g stroke="#f3a64a" stroke-width="1" fill="none"><path d="M72 45V60M72 52H260M260 45V60"/><path d="M465 72H480M473 72V300M465 300H480"/></g>
-        <g fill="#f3a64a" font-family="monospace" font-size="9"><text x="146" y="43">DIMENSION LINE</text><text x="481" y="192" transform="rotate(90 481 192)">REFERENCE</text></g>
-        <defs><linearGradient id="scanGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#67f0dc" stop-opacity="0"/><stop offset=".5" stop-color="#67f0dc" stop-opacity=".7"/><stop offset="1" stop-color="#67f0dc" stop-opacity="0"/></linearGradient></defs>
-        <rect class="scan-beam" x="0" y="0" width="520" height="34"/>
-        <g class="electrical-overlay">
-          <path class="electric-route" d="M72 270H120V250H180V220H260V190H305V150H335V110H390V150H445"/>
-          <path class="electric-route route-secondary" d="M92 300H150V320H215V280H260V250H315V270H365V235H425"/>
-          <circle class="wire-node" cx="120" cy="250" r="5"/><circle class="wire-node" cx="180" cy="220" r="5"/><circle class="wire-node" cx="260" cy="190" r="5"/><circle class="wire-node" cx="335" cy="110" r="5"/><circle class="wire-node" cx="390" cy="150" r="5"/>
-          <circle class="current-pulse" r="4"><animateMotion dur="4.5s" repeatCount="indefinite" path="M72 270H120V250H180V220H260V190H305V150H335V110H390V150H445"/></circle>
+        <g class="build-stage stage-3" fill="none" stroke="#f3a64a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M174 270V285H235V300"/>
+          <circle cx="235" cy="315" r="15"/><circle cx="235" cy="315" r="7"/>
+          <path d="M235 330V343H310V95"/>
+          <path d="M298 95H322M302 89L318 101M318 89L302 101"/>
+          <path d="M310 95H350V115"/>
+          <rect x="330" y="115" width="40" height="56" rx="3"/>
+          <path d="M336 125H364M336 133H364M336 141H364M336 149H364M336 157H364"/>
+          <path d="M350 171V190"/>
+          <circle cx="350" cy="204" r="14"/><circle cx="350" cy="204" r="7"/>
+          <path d="M350 218V238H410"/>
+          <path d="M410 238V255M410 255H490M430 255V270M460 255V270M490 255V270"/>
+          <path d="M430 270L423 281M430 270L437 281M460 270L453 281M460 270L467 281M490 270L483 281M490 270L497 281"/>
+        </g>
+        <g class="build-stage stage-4" fill="none" stroke="#63d6d1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M40 300H190V350H40Z"/><path d="M50 310H180V340H50Z"/>
+          <path d="M62 320H95M105 320H138M148 320H168M62 330H95M105 330H138M148 330H168"/>
+          <path d="M310 95H410V75H485M410 75V95M402 95H418"/>
+          <path d="M410 238V215H485M430 215V230M460 215V230M485 215V230"/>
+          <path d="M40 365H490" stroke-dasharray="4 5" stroke-opacity=".5"/>
+        </g>
+        <g class="build-labels" fill="#f3a64a" font-family="monospace" font-size="9">
+          <text x="28" y="16">33/11 kV SUBSTATION — CONCEPT LAYOUT</text>
+          <text x="30" y="40">33 kV INCOMING</text>
+          <text x="124" y="137">LA</text><text x="187" y="178">ISOLATOR</text>
+          <text x="190" y="208">CB</text><text x="194" y="258">CT / PT</text>
+          <text x="250" y="291">33/11 kV POWER</text><text x="257" y="302">TRANSFORMER</text>
+          <text x="374" y="109">11 kV BUS</text><text x="371" y="195">BUS / VCB</text>
+          <text x="411" y="246">11 kV OUTGOING FEEDERS</text>
+          <text x="48" y="293">CONTROL / RELAY ROOM</text>
+          <text x="360" y="350">SINGLE-LINE SCHEMATIC</text>
+          <text x="360" y="362">NOT FOR CONSTRUCTION</text>
+        </g>
+        <rect class="scan-beam" x="0" y="0" width="520" height="28"/>
+        <g class="current-flow">
+          <circle r="3.5" fill="#ffb454"><animateMotion dur="7s" repeatCount="indefinite" path="M42 48H110V120V183H174V270H235V315H310V95H350V115V171V204V238H410V255H490"/></circle>
+          <circle r="3" fill="#67f0dc"><animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="M42 48H110V120V183H174V270H235V315H310V95H350V115V171V204V238H410V255H460V281"/></circle>
         </g>
       </svg>
       <div class="draft-caption"><strong>Built on experience.</strong><span>Measured work. Clear outcomes.</span></div>
