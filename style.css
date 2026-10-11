@@ -67,3 +67,22 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(35,107,111,.15),transpare
 @media(max-width:900px){.draft-card{min-height:560px}.blueprint.masterpiece-sld{inset:66px 10px 10px;width:calc(100% - 20px);height:calc(100% - 76px)}}
 @media(max-width:650px){.draft-card{min-height:390px;padding:12px}.draft-top{font-size:.58rem}.blueprint.masterpiece-sld{inset:55px 5px 5px;width:calc(100% - 10px);height:calc(100% - 60px)}}
 @media(prefers-reduced-motion:reduce){.masterpiece-sld .sld-stage,.masterpiece-sld .sld-busbars,.masterpiece-sld .sld-bay-lines,.masterpiece-sld .sld-transformers,.masterpiece-sld .sld-mv,.masterpiece-sld .sld-bottom,.masterpiece-sld .sld-energize{opacity:1;stroke-dashoffset:0;animation:none}.masterpiece-sld .scan-beam{display:none}}
+
+
+/* Refined animated professional identity / rotating role titles */
+.hero-copy{position:relative}
+.hero-intro{margin:26px 0 12px!important;font-size:clamp(1.65rem,3.2vw,2.8rem)!important;line-height:1.22!important;font-weight:700;letter-spacing:-.035em;color:var(--ink)}
+.intro-prefix{color:var(--muted);font-weight:500}
+.typewriter{display:inline-block;position:relative;min-width:11ch;color:var(--accent);text-shadow:0 0 28px rgba(103,240,220,.15)}
+.typewriter-text{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;width:0;border-right:2px solid transparent;animation:identity-type 1.3s steps(13,end) .35s forwards}
+.type-cursor{display:inline-block;width:3px;height:1em;background:#67f0dc;vertical-align:-.12em;margin-left:3px;box-shadow:0 0 12px #67f0dc;animation:cursor-blink .75s step-end infinite}
+.hero-role-line{display:inline-flex;align-items:center;gap:10px;margin-top:12px;min-height:1.4em;color:var(--ink);font-size:clamp(1rem,1.7vw,1.35rem);letter-spacing:.01em}
+.role-kicker{font-size:.56em;letter-spacing:.16em;color:var(--muted);font-weight:700}
+.role-swap{display:inline-block;color:var(--ink);font-weight:650;animation:role-enter .55s cubic-bezier(.2,.8,.2,1) both}
+.role-swap::before{content:"/";color:var(--accent);margin-right:10px}
+.hero-description{max-width:680px;color:var(--muted);font-size:1.02rem;line-height:1.8;margin:14px 0 25px}
+@keyframes identity-type{to{width:13ch}}
+@keyframes cursor-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes role-enter{from{opacity:0;transform:translateY(9px);filter:blur(3px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@media(max-width:650px){.hero-intro{margin-top:20px!important}.typewriter{min-width:0}.hero-role-line{display:flex;flex-wrap:wrap}.role-kicker{font-size:.53em}}
+@media(prefers-reduced-motion:reduce){.typewriter-text{width:13ch;animation:none}.type-cursor{animation:none;opacity:1}.role-swap{animation:none}}
