@@ -29,3 +29,18 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(35,107,111,.15),transpare
 @keyframes current-flow{0%{offset-distance:0%;opacity:0}8%,85%{opacity:1}100%{offset-distance:100%;opacity:0}}
 @keyframes scan-sweep{0%{transform:translateY(-180px);opacity:0}15%{opacity:.38}85%{opacity:.25}100%{transform:translateY(210px);opacity:0}}
 @media(prefers-reduced-motion:reduce){.blueprint .electric-route,.blueprint .wire-node,.blueprint .current-pulse,.blueprint .scan-beam{animation:none!important}}
+
+
+/* Progressive 33/11 kV substation drawing animation */
+.substation-blueprint .build-stage{stroke-dasharray:420;stroke-dashoffset:420;animation:substation-draw 2.4s ease-out forwards}
+.substation-blueprint .stage-1{animation-delay:.2s}
+.substation-blueprint .stage-2{animation-delay:1.8s}
+.substation-blueprint .stage-3{animation-delay:3.5s}
+.substation-blueprint .stage-4{stroke-dasharray:300;animation-delay:5.2s}
+.substation-blueprint .build-labels{opacity:0;animation:labels-appear .8s ease-out 6.2s forwards}
+.substation-blueprint .scan-beam{transform:translateY(-20px);animation:scan-sweep 5.5s ease-in-out 1s infinite}
+.substation-blueprint .current-flow{opacity:0;animation:labels-appear .6s ease-out 6.5s forwards}
+.substation-blueprint .current-flow circle{filter:drop-shadow(0 0 4px #ffb454)}
+@keyframes substation-draw{to{stroke-dashoffset:0}}
+@keyframes labels-appear{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.substation-blueprint .build-stage{stroke-dashoffset:0;animation:none}.substation-blueprint .build-labels,.substation-blueprint .current-flow{opacity:1;animation:none}.substation-blueprint .scan-beam{display:none}}
