@@ -152,3 +152,17 @@ ul.contract-banner-services li:before{content:"✓";position:absolute;left:14px;
 .contract-banner-bottom{display:flex!important;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media(max-width:760px){.contract-banner-main{grid-template-columns:minmax(0,1fr)!important}.contract-banner-copy h3#contract-banner-title{font-size:clamp(1.7rem,7vw,2.5rem)!important}ul.contract-banner-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:480px){ul.contract-banner-services{grid-template-columns:minmax(0,1fr)!important}.contract-banner-top{align-items:flex-start}.contract-banner-copy h3#contract-banner-title .contract-heading-highlight{font-size:1.08rem!important;padding:9px 10px}}
+
+/* Contract callout visual repair */
+.contract-banner{display:block!important;width:100%;clear:both}
+.contract-banner-main{display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr)!important;align-items:center;gap:32px!important}
+.contract-banner-copy{min-width:0}
+.contract-banner-copy h3#contract-banner-title{display:flex!important;flex-direction:column!important;align-items:flex-start;gap:10px;margin:12px 0 22px!important;font-size:clamp(1.8rem,3.6vw,3.1rem)!important;line-height:1.08!important}
+.contract-banner-copy h3#contract-banner-title span{display:inline-block!important}
+.contract-banner-copy h3#contract-banner-title span:last-child{width:fit-content;max-width:100%;padding:10px 15px;border:1px solid #ffbd4a;border-left:5px solid #ffbd4a;border-radius:5px;background:rgba(255,189,74,.15);color:#ffca66!important;font-size:clamp(1.15rem,2.4vw,2rem)!important;font-weight:900;line-height:1.25;box-shadow:0 8px 26px rgba(255,189,74,.1)}
+.contract-banner-services{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important;list-style:none!important;margin:0!important;padding:0!important;min-width:0}
+.contract-banner-services span{display:block!important;position:relative;margin:0!important;padding:12px 14px 12px 39px!important;border:1px solid rgba(99,214,209,.25);border-radius:9px;background:rgba(8,20,31,.72);color:#e6f0f5;line-height:1.45;overflow-wrap:anywhere}
+.contract-banner-services span:before{content:"✓";position:absolute;left:14px;top:12px;color:#ffbd4a;font-weight:900}
+.contract-banner-bottom{display:flex!important;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:760px){.contract-banner-main{grid-template-columns:minmax(0,1fr)!important}.contract-banner-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){.contract-banner-services{grid-template-columns:minmax(0,1fr)!important}.contract-banner-copy h3#contract-banner-title span:last-child{font-size:1.08rem!important;padding:9px 10px}}
